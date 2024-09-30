@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="./assets/css/font/all.min.css">
+    <link rel="stylesheet" href="./assets/css/font/fontawesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- responsive.css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/slick/responsive.css"/>
+
+
+    <title>Navbars</title>
+    
+</head>
+<body>
+
+    <header class="header_topbar">
+        <div class="container">
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/images/logo.webp" alt="logo">
+                    </a>
+                </div>
+                <div class="search_form search_btn_opacity">
+                    <input type="search" class="search_input form-control" placeholder="Search for Products">
+                    <button type="button" class="btn search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <ul class="header_menu">
+                    <li><a href="">Help</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="" class="btn">Sell Now</a></li>
+                </ul>
+                <div class="header_action_btn">
+                    <button type="button" class="action_btn_icon btn search_action"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="button" class="action_btn_icon btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                    <a href="#" class="action_btn_icon btn"><i class="fa-regular fa-circle-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <div class="navmenu_area">
+        <div class="container">
+            <div class="navmenu_row">
+                <div class="all_items_btn">
+                    <button type="button" class="btn"><i class="fa-solid fa-bars-staggered"></i>All Items</button>
+                </div>
+                <ul class="navmenu_items">
+                    <li><a href="">Hot Deal</a></li>
+                    <li><a href="">Hot Deal</a></li>
+                    <li><a href="">Hot Deal</a></li>
+                    <li><a href="">Hot Deal</a></li>
+                    <li><a href="">Hot Deal</a></li>
+                    <li><a href="">Hot Deal</a></li>
+                    <li><a href="">Hot Deal</a></li>
+                    <li><a href="">Hot Deal</a></li>
+                    <li><a href="">Hot Deal</a></li>
+                </ul>
+                <div class="menu_toggle_btn">
+                    <button type="button" class="btn sidebar-open"><i class="fa-solid fa-ellipsis"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Menu Area End -->
+    
+    <div class="menu_items_sidebar">
+        <div class="overLayout"></div>
+        <button type="button" class="btn sidebar_close_btn"><i class="fa-regular fa-circle-xmark"></i></button>
+        <ul class="menu_items_area">
+            <li><a href="#">Samsung</a></li>
+            <li><a href="#">Pixel</a></li>
+            <li><a href="#">Laptop</a></li>
+            <li><a href="#">Sound Appliance</a></li>
+            <li><a href="#">OnePlus</a></li>
+        </ul>
+    </div>
+
+    <!-- Jquery Link -->
+
+    
+    <script type="text/javascript" src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+
+    <script>
+
+        $(document).ready(function (){
+            $(document).on('click', '.sidebar-open', function (){
+                $('.menu_items_sidebar').addClass('active');
+            })
+
+            $(document).on('click', '.sidebar_close_btn', function (){
+                $('.menu_items_sidebar').removeClass('active');
+            })
+
+            $(document).on('click', '.search_action', function (){
+                $('.search_btn_opacity').toggleClass('active');
+                console.log('object');
+            })
+        })
+
+    </script>
+
+
+</body>
+</html>
